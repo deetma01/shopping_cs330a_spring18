@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping list</title>
+</head>
+
+<body>
+<div class = "header">
+<h1>Shopping List</h1>
+<form>
+	<p>Search: <input type="text"></p>
+	</form>
+</div>
+
+<div class = "enter">
+
+	<p>Name: <input type="text"></p>
+
+<select>
+	<option value="priority">Priority</option>
+	<option value="high">High</option>
+	<option value="medium">Medium</option>
+	<option value="low">Low</option>
+</select>
+
+<select>
+	<option value="store">Store</option>
+	<option value="costco">Costco</option>
+	<option value="hyvee">Hy-Vee</option>
+	<option value="walmart">Walmart</option>
+</select>
+
+<select>
+	<option value="section">Section</option>
+	<option value="deli">Deli</option>
+	<option value="bakery">Bakery</option>
+	<option value="candy">Candy</option>
+</select>
+
+	<p>Quantity: <input type= "number"></p>
+
+	<p>Price: <input type="number"></p>
+
+	<button type="button" onclick="clickedon()">Add Item</button>
+
+</div>
+
+<div id="bottom">
+<table class="table">
+	<thead>
+		<th>Name</th>
+		<th>Priority</th>
+		<th>Store</th>
+		<th>Section</th>
+		<th>Quantity</th>
+		<th>Price</th>
+	</thead>
+
+	<tbody id="body"></tbody>
+
+</div>
+
+<script src="table.js" type=text/javascript></script>
+
+</body>
+</html>
