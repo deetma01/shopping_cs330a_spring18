@@ -1,7 +1,7 @@
 
 var shoppinglist = new ShoppingList()
 var view = new View(shoppinglist)
-myDB = new LocalStorageSaver(shoppinglist, "matts_storage")
+myDB = new remotesaver(shoppinglist, "storage")
 
 function clickedon() {
     let rowcolids = ['itemname', 'qty', 'store', 'category', 'price', 'priority']
